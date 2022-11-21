@@ -17,5 +17,5 @@ variable "playbook" {
   default = "~/script/playbook.txt"
 }
 variable "key" {
-  default = "~/Keypairs/USTeam1Keypair"
+  default = "~/Keypairs/newkeypair"
 }

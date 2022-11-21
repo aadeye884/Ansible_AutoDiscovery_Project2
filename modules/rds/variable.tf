@@ -12,7 +12,7 @@ variable "vpc_sg_id" {
 }
 
 variable "db_name" {
-  default = "pacpdbs"
+  default = "efgdbs"
 }
 
 variable "username" {
@@ -24,5 +24,5 @@ variable "password" {
 }
 
 variable "identifier" {
-  default = "pacpdbs"
+  default = "efgdbs"
 }

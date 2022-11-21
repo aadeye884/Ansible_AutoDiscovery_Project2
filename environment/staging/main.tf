@@ -4,7 +4,7 @@ module "staging_vpc" {
 
 module "staging_keypair" {
   source   = "../../modules/keypair"
-  key_name = "UST1Keypair"
+  key_name = "newkeypair"
 }
 
 module "staging_security_group" {

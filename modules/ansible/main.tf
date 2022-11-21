@@ -35,7 +35,7 @@ sudo chown -R ec2-user:ec2-user /etc/ansible
 sudo chmod 400 /etc/ansible/key.pem
 sudo chmod 755 /etc/ansible/discovery.sh
 echo "* * * * * sh /etc/ansible/discovery.sh" >> /etc/crontab
-echo "license_key: 984fd9395376105d6273106ec42913a399a2NRAL" | sudo tee -a /etc/newrelic-infra.yml
+echo "license_key: c32625464fc4f6eae500b09fa88fe0c93434NRAL" | sudo tee -a /etc/newrelic-infra.yml
 sudo curl -o /etc/yum.repos.d/newrelic-infra.repo https://download.newrelic.com/infrastructure_agent/linux/yum/amazonlinux/2/x86_64/newrelic-infra.repo
 sudo yum -q makecache -y --disablerepo='*' --enablerepo='newrelic-infra'
 sudo yum install newrelic-infra -y

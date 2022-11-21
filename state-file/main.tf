@@ -1,5 +1,5 @@
 #S3 Bucket for Backend
-resource "aws_s3_bucket" "s3usteam1ssv9" {
+resource "aws_s3_bucket" "efgv1" {
   bucket        = var.bucket_name
   force_destroy = true
   tags = {
@@ -14,7 +14,7 @@ resource "aws_s3_bucket_acl" "backend_bucket_acl" {
 ################
 # DYNAMODB TABLE
 ################
-resource "aws_dynamodb_table" "USTeam1-TFlockv9" {
+resource "aws_dynamodb_table" "EFG-TFlockv1" {
   name     = var.table_name
   hash_key = "LockID"
   attribute {

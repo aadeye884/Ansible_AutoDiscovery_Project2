@@ -118,7 +118,7 @@ resource "aws_instance" "Sonarqube_Server" {
   sudo systemctl start nginx.service
 
   #Install New relic
-  curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=NRAK-DKQ2N9WXV6A63PVHNF3DRG6SHE6 NEW_RELIC_ACCOUNT_ID=3644862 NEW_RELIC_REGION=EU /usr/local/bin/newrelic install -y
+  curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=NRAK-Y12GXMBEAGLCVLHHRTXYI0NM9IN NEW_RELIC_ACCOUNT_ID=3566454 NEW_RELIC_REGION=US /usr/local/bin/newrelic install -y
   echo "*****Change Hostname(IP) to something readable*****"
   sudo hostnamectl set-hostname Sonarqube
   sudo reboot

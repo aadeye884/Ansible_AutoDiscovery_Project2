@@ -18,7 +18,7 @@ sudo alternatives --set python /usr/bin/python3
 sudo pip3 install docker-py 
 sudo systemctl start docker
 sudo systemctl enable docker
-echo "license_key: 3e384ca1e73f3e00902f23574f7f847cb486NRAL" | sudo tee -a /etc/newrelic-infra.yml
+echo "license_key: c32625464fc4f6eae500b09fa88fe0c93434NRAL" | sudo tee -a /etc/newrelic-infra.yml
 sudo curl -o /etc/yum.repos.d/newrelic-infra.repo https://download.newrelic.com/infrastructure_agent/linux/yum/el/7/x86_64/newrelic-infra.repo
 sudo yum -q makecache -y --disablerepo='*' --enablerepo='newrelic-infra'
 sudo yum install newrelic-infra -y

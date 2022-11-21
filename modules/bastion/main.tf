@@ -8,18 +8,18 @@ resource "aws_instance" "bastion" {
   key_name                    = var.key_name
   associate_public_ip_address = true
   provisioner "file" {
-    source      = "~/keypairs/USTeam1Keypair"
-    destination = "/home/ec2-user/USTeam1Keypair"
+    source      = "~/keypairs/newkeypair"
+    destination = "/home/ec2-user/newkeypair"
   }
   connection {
     type        = "ssh"
     host        = self.public_ip
-    private_key = file("~/keypairs/USTeam1Keypair")
+    private_key = file("~/keypairs/newkeypair")
     user        = "ec2-user"
   }
   user_data = <<-EOF
   #!/bin/bash
-  sudo chmod 400 USTeam1Keypair
+  sudo chmod 400 newkeypair
   sudo hostnamectl set-hostname bastion
   EOF
   tags = {
